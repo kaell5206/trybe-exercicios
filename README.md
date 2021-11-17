@@ -1,8 +1,8 @@
 # trybe - Kaell Alecsander Silva Caldeira 
 
-Está repositorio tem como finalidade documentar todo o processo de aprendizado meu durante o curso da Trybe!
+Este repositorio tem como finalidade documentar todo o meu processo de aprendizado durante o curso na Trybe!
 
-aqui estarão guardadas meus exercicios e projetos pra ajudar a organizar meu ambiente de estudos.
+aqui estarão guardadas meus exercicios e projetos, para ajudar a organizar meu ambiente de estudos.
 
 linkedIn: https://www.linkedin.com/in/kaell-caldeira-930382225/
 
