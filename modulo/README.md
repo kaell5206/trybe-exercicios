@@ -12,3 +12,6 @@ Neste módulo, você vai aprender como desenvolver um código de back-end robust
 
 ### Ciência da Computação:
 Aqui você aprenderá os principais conceitos da Ciência da Computação que são aplicados no dia a dia do desenvolvimento de software e como transformar a teoria em prática, analisando algoritmos e escolhendo as melhores estruturas de dados para resolver os problemas!
+
+### Soft-Skills:
+NVocê aprenderá a agir e interagir com empatia e resiliência, demonstrando autoconhecimento e buscando conhecer as próprias emoções, compreendendo como regular seu temperamento, irritação e frustração diante de situações adversas.
