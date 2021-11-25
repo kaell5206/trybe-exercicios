@@ -1,4 +1,4 @@
-table, tr, th, td {
+tr, th, td {
     border: solid 1px;
     text-align: center;
     padding-left: 5rem;
@@ -6,10 +6,18 @@ table, tr, th, td {
     margin: auto;
     
 }
+table {
+    text-align: center;
+    margin: auto;
+}
 th {
     font-size: 1.2rem;
 }
-
-header, nav, h4, h1, h2, h3, section, article, a, body, p {
-    border: solid 2px;
+.patas img, .social img, .cores img {
+    width: 60%;
 }
+
+/*header, nav, h4, h1, h2, h3, section, article, a, body, p {
+    
+}
+*/
