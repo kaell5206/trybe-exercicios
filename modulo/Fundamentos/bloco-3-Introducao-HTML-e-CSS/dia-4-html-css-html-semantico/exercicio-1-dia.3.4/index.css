@@ -1,0 +1,14 @@
+tr, th, td {
+    border: solid 1px;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 6rem;
+    
+}
+th {
+    font-size: 1.3rem;
+}
+
+header, nav, h1, h2, h3, section, article, a, body, p {
+    border: solid 2px;
+}
