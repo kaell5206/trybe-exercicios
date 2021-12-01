@@ -5,7 +5,3 @@ for (let i = 0; i < n; i+=1){
  array.push(letra)
     console.log(array.join(''))
 }
-
-    //     array.push(letra)
-//     console.log(array.join(''))
-// }
