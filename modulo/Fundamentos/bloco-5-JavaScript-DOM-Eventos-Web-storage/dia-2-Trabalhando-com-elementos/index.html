@@ -1,24 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
-      <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
-      </section>
-      Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
-    </section>
-  </main>
-  <script src="script2.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let body = document.querySelector('body')
+      function tittleh1() {
+        let element = document.createElement('h1');
+        element.innerHTML = element.innerText = "Exercicios 5.2 - Javascript DOM"   
+         
+        document.body.appendChild(element)
+      }
+      tittleh1()
+
+      const main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+      
+      const elementSection = document.createElement('section');
+      elementSection.className = 'center-content';
+      elementSection.innerHTML = elementSection.innerText = 'Testando fonte um dois 4'
+      
+      main.appendChild(elementSection)
+
+      const p = document.createElement('p');
+      p.innerHTML = p.innerText = 'lorem ipsum'
+      elementSection.appendChild(p)
+
+      const leftsec = document.createElement('section');
+      leftsec.className = 'left-content';
+      main.appendChild(leftsec)
+
+      const rightsec = document.createElement('section');
+      rightsec.className = 'right-content';
+      main.appendChild(rightsec);
+
+      const img = document.createElement('img');
+      img.src = "https://i.picsum.photos/id/612/200/200.jpg?hmac=HbIkwJ0QBqhSlGTi3bnF4JFTp9BntF-teQZUQhpqWyM";
+      img.className = "small-image";
+      leftsec.appendChild(img)
+
+      const lista = document.createElement('ul');
+      rightsec.appendChild(lista);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
+        for (let i = 1; i <= arrayNumbers.length;i+=1) {
+        const listLi = document.createElement('li');
+        listLi.innerHTML = listLi.innerText = i;
+        lista.appendChild(listLi)
+      }
+      for (let i = 0; i < 3; i+=1) {
+      const elementH3 = document.createElement('h3');
+      main.appendChild(elementH3 ) 
+      elementH3.innerHTML = elementH3.innerText = 'Test'
+      elementH3.className = 'description'
+      }
+      main.removeChild(leftsec)
+      rightsec.style.marginRight = 'auto'
+      document.getElementsByClassName('center-content')[0].parentNode.style.backgroundColor = 'green'
+      lista.lastChild.remove()
+      lista.lastChild.remove()
+      
+
+      
+
+      // COLOQUE SEU CÓDIGO AQUI
+    </script>
+  </body>
 </html>
