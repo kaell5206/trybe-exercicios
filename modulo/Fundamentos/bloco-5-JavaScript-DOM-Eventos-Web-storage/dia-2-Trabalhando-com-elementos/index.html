@@ -71,7 +71,8 @@
       document.body.appendChild(main);
       
       const elementSection = document.createElement('section');
-      elementSection.classname = 'center-content';
+      elementSection.className = 'center-content';
+      elementSection.innerHTML = elementSection.innerText = 'Testando fonte um dois 4'
       
       main.appendChild(elementSection)
 
@@ -96,11 +97,25 @@
       rightsec.appendChild(lista);
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
         'Sete', 'Oito', 'Nove', 'Dez']
-        for (let i = 0; i<arrayNumbers.length;i+=1) {
+        for (let i = 1; i <= arrayNumbers.length;i+=1) {
         const listLi = document.createElement('li');
         listLi.innerHTML = listLi.innerText = i;
         lista.appendChild(listLi)
       }
+      for (let i = 0; i < 3; i+=1) {
+      const elementH3 = document.createElement('h3');
+      main.appendChild(elementH3 ) 
+      elementH3.innerHTML = elementH3.innerText = 'Test'
+      elementH3.className = 'description'
+      }
+      main.removeChild(leftsec)
+      rightsec.style.marginRight = 'auto'
+      document.getElementsByClassName('center-content')[0].parentNode.style.backgroundColor = 'green'
+      lista.lastChild.remove()
+      lista.lastChild.remove()
+      
+
+      
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
