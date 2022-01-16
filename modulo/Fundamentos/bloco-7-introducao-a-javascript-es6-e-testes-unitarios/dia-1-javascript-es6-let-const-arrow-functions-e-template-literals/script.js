@@ -48,7 +48,7 @@ const fatorial = (Number) => {
 console.log(fatorial(6))
 
 const longWord = (frase) => {
-  let splitString = frase.search('x');
+  let splitString = frase.split(' ');
   for (let i = 1; i < splitString.length; i += 1) {
     for (let j = 0; j < i; j += 1) {
       if (splitString[i].length > splitString[j].length) {
@@ -59,7 +59,7 @@ const longWord = (frase) => {
     }
   }
 
-  return splitString
+  return splitString[0]
 }
 console.log(longWord('Antônio foi no banheiro e não paralalelelelelepipepepepdododoxdodododo sabemos o que aconteceu'))
 
@@ -80,4 +80,6 @@ const stringC = (string) => {
   return newString;
 }
 console.log(stringC(stringTest))
+//  parte 2
+
 
