@@ -61,27 +61,45 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-function authorBornIn1947(obj) {
-  // escreva aqui o seu código
-  let found = obj.find(element => element.author.birthYear === 1947)
+// // Adicione o código do exercício aqui:
+// function authorBornIn1947(obj) {
+//   // escreva aqui o seu código
+//   let found = obj.find(element => element.author.birthYear === 1947)
 
-  return found.author.name;
-}
-console.log(authorBornIn1947(books))
+//   return found.author.name;
+// }
+// console.log(authorBornIn1947(books))
 
-function smallerName() {
-  let nameBook = books[0].name ;
-  // escreva aqui o seu código
-  books.forEach((bora) => bora.name.length < nameBook.length ? nameBook = bora.name : false)
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
-}
-console.log(smallerName())
+// function smallerName() {
+//   let nameBook = books[0].name ;
+//   // escreva aqui o seu código
+//   books.forEach((bora) => bora.name.length < nameBook.length ? nameBook = bora.name : false)
+//   // Variável nameBook que receberá o valor do menor nome;
+//   return nameBook;
+// }
+// console.log(smallerName())
 
-function getNamedBook() {
-  // escreva seu código aqui
-  return books.find((livro) => {  return livro.name.length === 26 } )
+// function getNamedBook() {
+//   // escreva seu código aqui
+//   return books.find((livro) => {  return livro.name.length === 26 } )
   
-}
-console.log(getNamedBook())
+// }
+// console.log(getNamedBook())
+
+// function booksOrderedByReleaseYearDesc() {
+//   // escreva aqui seu código
+//  return books.sort((a, b) => b.releaseYear - a.releaseYear) 
+// }
+// console.log(booksOrderedByReleaseYearDesc())
+
+// function everyoneWasBornOnSecXX() {
+//   // escreva seu código aqui
+//   return books.every((person) => person.birthYear > 1901);
+// }
+// console.log(everyoneWasBornOnSecXX())
+
+// function someBookWasReleaseOnThe80s() {
+//   // escreva seu código aqui
+//   return books.some((livro) => livro.releaseYear > 1980 && livro.releaseYear < 1989)
+// }
+// console.log(someBookWasReleaseOnThe80s())
