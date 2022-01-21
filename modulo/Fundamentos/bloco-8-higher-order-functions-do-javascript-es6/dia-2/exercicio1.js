@@ -94,12 +94,12 @@ const books = [
 
 // function everyoneWasBornOnSecXX() {
 //   // escreva seu código aqui
-//   return books.every((person) => person.birthYear > 1901);
+//   return books.every((person) => person.birthYear > 1901 && person.birthYear <= 2000);
 // }
 // console.log(everyoneWasBornOnSecXX())
 
 // function someBookWasReleaseOnThe80s() {
 //   // escreva seu código aqui
-//   return books.some((livro) => livro.releaseYear > 1980 && livro.releaseYear < 1989)
+//   return books.some((livro) => livro.releaseYear > 1980 && livro.releaseYear <= 1989)
 // }
 // console.log(someBookWasReleaseOnThe80s())
